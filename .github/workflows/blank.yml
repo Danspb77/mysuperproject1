@@ -51,6 +51,7 @@ jobs:
     
     steps:
       - name: the same as in CI with aws
+        run: echo "Hello"
 #         uses: aws/actions/configure-aws-credentials@v1
 #         with:
 #           aws-access-key-id : ${{ secrets.MY_AWS_ACCESS_KEY }}
