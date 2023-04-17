@@ -37,6 +37,6 @@ jobs:
         run: |
           echo "A initial message"
           zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x *.git*
-          ls -l
+          zip -sf ${{ env.DEPLOY_PACKAGE_NAME }}
 
     
