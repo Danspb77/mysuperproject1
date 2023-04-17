@@ -34,7 +34,7 @@ jobs:
         run: echo "Hello"
         
       - name:   create zip deployment package
-      - run: |
+        run: |
           echo "A initial message"
           zip -r ${{ DEPLOY_PACKAGE_NAME }} ./ -x *.git*
           ls -l
