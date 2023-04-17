@@ -36,7 +36,7 @@ jobs:
       - name:   create zip deployment package
         run: |
           echo "A initial message"
-          zip -r ${{ DEPLOY_PACKAGE_NAME }} ./ -x *.git*
+          zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x *.git*
           ls -l
 
     
