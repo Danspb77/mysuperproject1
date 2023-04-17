@@ -39,7 +39,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: create zip file
-        run: |
+      - run: |
           echo Add other actions to build,
           echo test, and deploy your project.
           zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x *.git*
